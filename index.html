@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RealEstate</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/grid_12.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/jqtransform.css">
+<script src="js/jquery-1.7.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/cufon-yui.js"></script>
+<script src="js/vegur_400.font.js"></script>
+<script src="js/Vegur_bold_700.font.js"></script>
+<script src="js/cufon-replace.js"></script>
+<script src="js/tms-0.4.x.js"></script>
+<script src="js/jquery.jqtransform.js"></script>
+<script src="js/FF-cash.js"></script>
+<script>
+$(document)
+    .ready(function () {
+    $('.form-1')
+        .jqTransform();
+    $('.slider')
+        ._TMS({
+        show: 0,
+        pauseOnHover: true,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 1000,
+        preset: 'fade',
+        pagination: true,
+        pagNums: false,
+        slideshow: 7000,
+        numStatus: false,
+        banners: false,
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+});
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div class="main">
+  <!--==============================header=================================-->
+  <header>
+    <div>
+      <div class="row" style="margin-bottom: 1em;"></div>
+      <h1><a href="index.html"><img src="ASlogo.jpg" alt=""></a></h1>
+      <div class="headerInfo"> <span>325 N. St Paul Street, Suite 3350  |  Dallas, Texas 75201<br><u>Phone</u>: 214.750.1709  |  <u>Fax</u>: 214.750.1623</span>  </div>
+      <div id="slide">
+        <div class="slider">
+          <ul class="items">
+            <li><img src="gallery/apart3.jpg" alt=""></li>
+            <li><img src="gallery/apart2.jpg" alt=""></li>
+            <li><img src="gallery/apart4.jpg" alt=""></li>
+          </ul>
+        </div>
+        <a href="#" class="prev"></a><a href="#" class="next"></a> </div>
+      <nav>
+        <ul class="menu">
+          <li class="current"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--==============================content================================-->
+  <section id="content">
+    <div class="container_12">
+      <div class="grid_8">
+        <h2 class="top-1 p3">Welcome!</h2>
+        <p class="p2">Amerisouth Realty is a real-estate company focusing on affordable housing.</p>
+        <h2 class="p4">Owner, operator, and developer of multifamily apartment communities.</h2>
+        <div class="wrap block-1">
+          <div> <img src="gallery/001.jpg" style="width: 172px; height: 90px;" alt="" class="img-border">
+            <h3>Affordable</h3>
+            <p>Nam liber tempor cum soluta no eleifend option congue nihil imperdiet doming iquod mazim placerat.</p>
+            <a href="#" class="button">More</a> </div>
+          <div> <img src="gallery/003.jpg" style="width: 172px; height: 90px;" alt="" class="img-border">
+            <h3>Family</h3>
+            <p>Nam liber tempor cum soluta no eleifend option congue nihil imperdiet doming iquod mazim placerat.</p>
+            <a href="#" class="button">More</a> </div>
+          <div class="last"> <img src="gallery/007.jpg" style="width: 172px; height: 90px;" alt="" class="img-border">
+            <h3>Renting</h3>
+            <p>Nam liber tempor cum soluta no eleifend option congue nihil imperdiet doming iquod mazim placerat.</p>
+            <a href="#" class="button">More</a> </div>
+        </div>
+      </div>
+      <div class="grid_4">
+        <div class="left-1">
+          <h2 class="top-1 p3">Find your home</h2>
+          <form id="form-1" class="form-1 bot-1" action="#">
+            <div class="select-1">
+              <label>Home type</label>
+              <select name="select" >
+                <option>Homes for sale</option>
+              </select>
+            </div>
+            <div>
+              <label>Location</label>
+              <input type="text" value="Address, City, Zip" onBlur="if(this.value=='') this.value='Address, City, Zip'" onFocus="if(this.value =='Address, City, Zip' ) this.value=''">
+            </div>
+            <div class="select-2">
+              <label>Beds</label>
+              <select name="select" >
+                <option>&nbsp;</option>
+              </select>
+            </div>
+            <div class="select-2 last">
+              <label>Baths</label>
+              <select name="select" >
+                <option>&nbsp;</option>
+              </select>
+            </div>
+            <a class="button">Search</a>
+            <div class="clear"></div>
+          </form>
+          <!-- <h2 class="p3">Find our office</h2>
+          <img src="images/page1-img4.png" alt="">
+          <div class="lists">
+            <ul class="list-1">
+              <li><a href="#">Asia</a></li>
+              <li><a href="#">Australia</a></li>
+              <li><a href="#">Africa</a></li>
+            </ul>
+            <ul class="list-1 last">
+              <li><a href="#">North America</a></li>
+              <li><a href="#">Europe</a></li>
+              <li><a href="#">Latin America</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+</div>
+
+<script>Cufon.now();</script>
+</body>
+</html>
